@@ -1,0 +1,12 @@
+{# Link to parent template #}
+{% extends "base.html" %}
+{# "block 'content'" link to base #}
+{% block content %}
+    <h1>
+        Hello {{name|capitalize}}!
+    </h1>
+    <p>
+        Here's a picture of a kitten.  Awww...
+    </p>
+    <img src="http://placekitten.com/g/200/300">
+{% endblock %}

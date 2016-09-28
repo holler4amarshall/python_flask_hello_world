@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{# "block 'content'" link to base #}
+{# Link to parent template #}
+{% block content %}
+    <body>
+        <h3>your jedi name is...</h3>
+        <h1>{{last_name[:3]|capitalize}}{{first_name[:2]|lower}}</h1>
+    </body>
+{% endblock %}
+
+
+

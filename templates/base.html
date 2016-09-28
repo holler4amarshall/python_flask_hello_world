@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask/Jinja</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #main {
+                max-width: 500px;
+                padding: 20px;
+            }
+
+            nav .title {
+                font-weight: bold;
+            }
+
+             .active {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>...a brief demo of a Flask/Jinja mini web application</h1>
+      <h3>how to use this app:</h3>
+      <ul>
+          <li>add /hello to the URL to see a Hello World message</li>
+          <li>add /hello/enter your first name to\ 
+          the URL to see a personalised greeting</li>
+          <li>add /jedi/your first name/your last name to find out your Jedi name<\li>
+      {% block content %}{% endblock %}
+    </body>
+    <footer>
+     created by Holly as a part of Thinkful Python programming coursework
+    </footer>
+</html>
